@@ -1,4 +1,4 @@
-/* Which track generated the most revenue? which album? which genre? */
+/* Which countries have the highest sales revenue? What percent of total revenue does each country make up? */
 
 SELECT invoices.BillingCountry, round(sum(invoice_items.UnitPrice) * 100 / (SELECT sum(invoice_items.UnitPrice)FROM invoice_items), 2) as '% of Total Revenue for each country' 
 FROM invoices
