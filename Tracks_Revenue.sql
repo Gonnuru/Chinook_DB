@@ -1,3 +1,5 @@
+/* Which track generated the most revenue? which album? which genre? */
+
 SELECT tracks.TrackId, tracks.name as Track_Name, genres.name as Genre_Name, 
 	    albums.Title as Album_Name, sum(invoice_items.UnitPrice * invoice_items.Quantity) as Revenue
 from tracks
