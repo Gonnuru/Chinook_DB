@@ -1,3 +1,5 @@
+/* Which tracks appeared in the most playlists? how many playlist did they appear in? */
+
 select tracks.Name, count(*) as number_of_playlists
 from tracks
 LEFT JOIN playlist_track
